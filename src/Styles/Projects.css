@@ -1,0 +1,13 @@
+.projectContainer {
+  width: 100%;
+  /* border: 2px solid orange; */
+  height: 100vh;
+  background-image: radial-gradient(
+    circle,
+    #255092,
+    #2762b1,
+    #2364ad,
+    #237ad0,
+    #1a92f4
+  );
+}
