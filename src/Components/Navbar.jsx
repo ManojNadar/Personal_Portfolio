@@ -8,14 +8,22 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <nav>
-      <Link to="home" className="logo">
+      <Link to="home" spy={true} smooth={true} duration={500} className="logo">
         MAN.DEV
       </Link>
       <div className="navigations">
-        <Link to="about">About</Link>
-        <Link to="projects">Projects</Link>
-        <Link to="experience">Experience</Link>
-        <Link to="contact">Contact</Link>
+        <Link spy={true} smooth={true} duration={500} to="about">
+          About
+        </Link>
+        <Link spy={true} smooth={true} duration={500} to="projects">
+          Projects
+        </Link>
+        <Link spy={true} smooth={true} duration={500} to="experience">
+          Experience
+        </Link>
+        <Link spy={true} smooth={true} duration={500} to="contact">
+          Contact
+        </Link>
       </div>
       <div className="navToggleBtn" onClick={() => setIsOpen(!isOpen)}>
         {isOpen ? (
@@ -31,16 +39,44 @@ const Navbar = () => {
 
       {isOpen ? (
         <div className="mobNavigations">
-          <Link to="about" onClick={() => setIsOpen(false)}>
+          <Link
+            spy={true}
+            smooth={true}
+            duration={500}
+            to="about"
+            offset={-50}
+            onClick={() => setIsOpen(false)}
+          >
             About
           </Link>
-          <Link to="projects" onClick={() => setIsOpen(false)}>
+          <Link
+            spy={true}
+            smooth={true}
+            duration={500}
+            to="projects"
+            offset={-50}
+            onClick={() => setIsOpen(false)}
+          >
             Projects
           </Link>
-          <Link to="experience" onClick={() => setIsOpen(false)}>
+          <Link
+            spy={true}
+            smooth={true}
+            duration={500}
+            to="experience"
+            offset={-50}
+            onClick={() => setIsOpen(false)}
+          >
             Experience
           </Link>
-          <Link to="contact" onClick={() => setIsOpen(false)}>
+          <Link
+            spy={true}
+            smooth={true}
+            duration={500}
+            to="contact"
+            offset={-50}
+            onClick={() => setIsOpen(false)}
+          >
             Contact
           </Link>
         </div>

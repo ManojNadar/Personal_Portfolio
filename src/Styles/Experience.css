@@ -1,0 +1,153 @@
+.expContainer {
+  width: 100%;
+  height: 100vh;
+  background-image: radial-gradient(
+    circle,
+    #255092,
+    #2762b1,
+    #2364ad,
+    #237ad0,
+    #1a92f4
+  );
+}
+
+.expHeader {
+  padding: 8% 0 0 3%;
+  font-size: 2.2em;
+  text-align: center;
+}
+
+.expContent {
+  display: flex;
+  width: 100%;
+  /* border: 1px solid orange; */
+  height: 100%;
+  justify-content: space-around;
+}
+
+.singleExp {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.singleExp > img {
+  width: 40%;
+  height: 30%;
+}
+.singleExp > p {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+/* Mobile view */
+
+@media (max-width: 330px) {
+  .expContainer {
+    padding-top: 10%;
+  }
+  .expContent {
+    flex-direction: column;
+    overflow: scroll;
+    /* border: 2px solid yellow; */
+    padding-bottom: 10%;
+  }
+
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
+  .singleExp {
+    width: 90%;
+    height: 50%;
+    margin: 0 auto 0 auto;
+  }
+  .singleExp > p {
+    font-size: 1em;
+    text-align: left;
+  }
+
+  .singleExp > img {
+    width: 50%;
+    height: 50%;
+  }
+}
+
+@media (min-width: 330px) and (max-width: 620px) {
+  .expContainer {
+    padding-top: 10%;
+  }
+  .expContent {
+    flex-direction: column;
+    overflow: scroll;
+    /* border: 2px solid yellow; */
+    padding-bottom: 10%;
+  }
+
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
+  .singleExp {
+    width: 80%;
+    height: 50%;
+    margin: 0 auto 0 auto;
+  }
+  .singleExp > p {
+    font-size: 1em;
+    text-align: left;
+  }
+
+  .singleExp > img {
+    width: 50%;
+    height: 50%;
+  }
+}
+
+@media (min-width: 620px) and (max-width: 780px) {
+  .expContainer {
+    padding-top: 10%;
+  }
+
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
+  .singleExp {
+    width: 40%;
+    height: 50%;
+  }
+  .singleExp > p {
+    font-size: 1em;
+    text-align: left;
+  }
+
+  .singleExp > img {
+    width: 50%;
+    height: 50%;
+  }
+}
+
+@media (min-width: 780px) and (max-width: 1120px) {
+  .expContainer {
+    padding-top: 10%;
+  }
+
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
+  .singleExp {
+    width: 40%;
+    height: 70%;
+    /* border: 1px solid red; */
+  }
+  .singleExp > p {
+    font-size: 1.2em;
+  }
+
+  .singleExp > img {
+    width: 50%;
+    height: 50%;
+  }
+}

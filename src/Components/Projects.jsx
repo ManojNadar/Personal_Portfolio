@@ -1,10 +1,14 @@
 import React from "react";
 import "../Styles/Projects.css";
+import Slider from "../Data";
 
 const Projects = () => {
   return (
-    <div id="projects" className="projectContainer">
-      Projects
+    <div>
+      <div id="projects" className="projectContainer">
+        <h2 className="projectHeader">Projects</h2>
+        <Slider />
+      </div>
     </div>
   );
 };
