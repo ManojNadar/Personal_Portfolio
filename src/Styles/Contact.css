@@ -6,6 +6,31 @@
   padding: 20px;
   background-color: var(--background-color);
   color: var(--text-color);
+  display: flex;
+  justify-content: space-around;
+  /* border: 1px solid orange; */
+}
+
+.contactImageContainer {
+  width: 45%;
+  height: 100%;
+}
+
+.contactImage {
+  width: 100%;
+  height: 100%;
+  /* border: 1px solid orange; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contactImage > img {
+  width: 70%;
+  height: 70%;
+}
+
+.formContainer {
+  width: 45%;
 }
 
 .contact-form h2 {
@@ -21,21 +46,43 @@
 
 .contact-form label {
   display: block;
-  margin-bottom: 10px;
+  margin-bottom: 2%;
 }
 
 .contact-form input,
 .contact-form textarea {
   width: 100%;
-  padding: 10px;
+  padding: 2%;
   border: 1px solid #ccc;
   border-radius: 5px;
   margin-bottom: 10px;
 }
 
 .contact-form button {
-  padding: 10px 20px;
+  padding: 2% 3%;
+  margin-top: 1%;
   border: none;
   border-radius: 5px;
   cursor: pointer;
+}
+
+/* Mobile Screen */
+
+@media (max-width: 330px) {
+  .contactImageContainer {
+    display: none;
+  }
+
+  .formContainer {
+    width: 100%;
+  }
+}
+@media (min-width: 330px) and (max-width: 620px) {
+  .contactImageContainer {
+    display: none;
+  }
+
+  .formContainer {
+    width: 100%;
+  }
 }

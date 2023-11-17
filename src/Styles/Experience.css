@@ -36,8 +36,11 @@
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
+  position: relative;
+  cursor: pointer;
   /* border: 1px solid rgba(255, 255, 255, 0.3); */
 }
+
 .singleExp > img {
   width: 50%;
   height: 60%;
@@ -49,6 +52,18 @@
   font-weight: bold;
   text-align: center;
   padding: 2% 7%;
+  position: absolute;
+  display: none;
+}
+
+.singleExp:hover .expDesc {
+  width: 100%;
+  height: 100%;
+  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 1);
 }
 
 /* Mobile view */
@@ -83,8 +98,8 @@
   }
 
   .singleExp > img {
-    width: 30%;
-    height: 30%;
+    width: 50%;
+    height: 50%;
   }
 }
 

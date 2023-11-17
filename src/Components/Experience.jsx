@@ -24,7 +24,7 @@ const Experience = () => {
         {exp.map((exp) => (
           <div key={exp.id} className="singleExp">
             <img src={exp.image} alt={exp.name} />
-            <p>{exp.desc}</p>
+            <p className="expDesc">{exp.desc}</p>
           </div>
         ))}
       </div>
