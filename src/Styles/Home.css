@@ -1,17 +1,13 @@
+@import url("./vars.css");
+
 .homeContainer {
   width: 100%;
   height: 100vh;
   margin-top: 3.5%;
   display: flex;
   justify-content: space-around;
-  background-image: radial-gradient(
-    circle,
-    #255092,
-    #2762b1,
-    #2364ad,
-    #237ad0,
-    #1a92f4
-  );
+  background-color: var(--background-color);
+  color: var(--text-color);
 }
 
 .leftHomeSection {

@@ -1,16 +1,21 @@
+@import url("./vars.css");
+
 .projectContainer {
   width: 100%;
-  /* border: 2px solid orange; */
-  height: 85vh;
-  background-image: radial-gradient(
-    circle,
-    #255092,
-    #2762b1,
-    #2364ad,
-    #237ad0,
-    #1a92f4
-  );
+  height: 90vh;
+  /* border: 2px solid white; */
   padding-bottom: 1%;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+.projectMainContainer {
+  width: 90%;
+  height: 95%;
+  margin: 0 auto 0 auto;
+  /* border: 2px solid white; */
+  padding-bottom: 1%;
+  background-color: var(--background-color);
+  color: var(--text-color);
 }
 
 ::-webkit-scrollbar {
@@ -20,24 +25,28 @@
 /* data.jsx */
 
 .projectHeader {
-  font-size: 2.5em;
+  background-color: var(--background-color);
+  color: var(--text-color);
   text-transform: uppercase;
   text-align: center;
+  font-size: 2em;
 }
 
 .slider {
-  width: 100%;
-  height: 100%;
+  width: 90%;
+  height: 90%;
   display: flex;
   padding-left: 3%;
   gap: 2% 2%;
   flex-wrap: wrap;
-  margin-top: 3%;
+  margin: 3% auto 0 auto;
   /* border: 1px solid red; */
   overflow: scroll;
+  /* background-color: yellow; */
 }
 
 .imageContainer {
+  margin: 1% 0;
   width: 31%;
   height: 40%;
 }

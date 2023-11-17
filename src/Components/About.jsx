@@ -12,11 +12,14 @@ const About = () => {
       </div>
       <div className="rightAboutContainer">
         <p>
-          <span className="aboutMe">About Me </span>
-          Looking for an opportunity to work as a web developer with a skillset
-          of ReactJS, Javascript, NodeJS,Rest API, MongoDB, CSS, HTML5. I'm
-          Having a four years of experience in other platform. Now I like to
-          completely get into the Web Development.
+          <span className="aboutMe">About Me - </span>
+          MERN Stack developer with 6 months full stack course. Enjoys working
+          with React.js, HTML, CSS, JavaScript, Node.js Experience in web
+          framework like Express. Comfortable with Library like React.js &
+          <span style={{ color: "blue", fontWeight: "bold" }}>
+            React-Native(Mobile Apps)
+          </span>
+          . Constantly seeking for new challenges and opportunities.
         </p>
       </div>
     </div>

@@ -1,15 +1,12 @@
+@import url("./vars.css");
+
 .footer {
   width: 100%;
   /* border: 2px solid orange; */
-  background-image: radial-gradient(
-    circle,
-    #255092,
-    #2762b1,
-    #2364ad,
-    #237ad0,
-    #1a92f4
-  );
   text-align: center;
+  padding: 2% 0;
+  background-color: var(--background-color);
+  color: var(--text-color);
 }
 
 .footer-content {

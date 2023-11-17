@@ -1,6 +1,3 @@
-import React from "react";
-// import Carousel from "react-responsive-carousel";
-
 const projects = [
   {
     id: 1,
@@ -77,16 +74,16 @@ const projects = [
   },
 ];
 
-const Slider = () => {
-  return (
-    <div className="slider">
-      {projects.map((item) => (
-        <div key={item.id} className="imageContainer">
-          <img src={item.image} alt={item.name} />
-        </div>
-      ))}
-    </div>
-  );
-};
+// const Slider = () => {
+//   return (
+//     <div className="slider">
+//       {projects.map((item) => (
+//         <div key={item.id} className="imageContainer">
+//           <img src={item.image} alt={item.name} />
+//         </div>
+//       ))}
+//     </div>
+//   );
+// };
 
-export default Slider;
+export default projects;

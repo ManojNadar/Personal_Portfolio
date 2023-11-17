@@ -1,16 +1,12 @@
+@import url("./vars.css");
+
 .aboutContainer {
   width: 100%;
   /* border: 2px solid grey; */
   height: 100vh;
-  background-image: radial-gradient(
-    circle,
-    #255092,
-    #2762b1,
-    #2364ad,
-    #237ad0,
-    #1a92f4
-  );
   display: flex;
+  background-color: var(--background-color);
+  color: var(--text-color);
 }
 
 .leftAboutContainer {
@@ -22,8 +18,8 @@
 }
 
 .leftAboutContainer > img {
-  width: 40%;
-  width: 60%;
+  width: 45%;
+  width: 70%;
 }
 
 .rightAboutContainer {
@@ -34,8 +30,14 @@
   align-items: center;
   padding: 5%;
 }
+
+.aboutMe {
+  font-weight: bolder;
+  font-size: 1.3em;
+  color: blue;
+}
 .rightAboutContainer > p {
-  font-size: 2.5em;
+  font-size: 2.1em;
 }
 
 /* Mobile View */

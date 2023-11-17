@@ -1,3 +1,5 @@
+@import url("./vars.css");
+
 nav {
   width: 100%;
   /* border: 1px solid red; */
@@ -9,14 +11,8 @@ nav {
   top: 0;
   left: 0;
   z-index: 9999;
-  background-image: radial-gradient(
-    circle,
-    #255092,
-    #2762b1,
-    #2364ad,
-    #237ad0,
-    #1a92f4
-  );
+  background-color: var(--background-color);
+  color: var(--text-color);
 }
 
 .logo {
@@ -75,14 +71,8 @@ nav {
     position: absolute;
     top: 100%;
     left: 0;
-    background-image: radial-gradient(
-      circle,
-      #193a6c,
-      #1f4e8c,
-      #2364ad,
-      #237ad0,
-      #1a92f4
-    );
+    background-color: var(--background-color);
+    color: var(--text-color);
     width: 100%;
     text-align: center;
     padding-top: 3%;
@@ -121,14 +111,8 @@ nav {
     position: absolute;
     top: 100%;
     left: 0;
-    background-image: radial-gradient(
-      circle,
-      #193a6c,
-      #1f4e8c,
-      #2364ad,
-      #237ad0,
-      #1a92f4
-    );
+    background-color: var(--background-color);
+    color: var(--text-color);
     width: 100%;
     text-align: center;
     padding-top: 3%;
@@ -167,14 +151,8 @@ nav {
     position: absolute;
     top: 100%;
     left: 0;
-    background-image: radial-gradient(
-      circle,
-      #193a6c,
-      #1f4e8c,
-      #2364ad,
-      #237ad0,
-      #1a92f4
-    );
+    background-color: var(--background-color);
+    color: var(--text-color);
     width: 100%;
     text-align: center;
     padding-top: 3%;

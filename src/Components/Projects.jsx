@@ -1,13 +1,19 @@
 import React from "react";
 import "../Styles/Projects.css";
-import Slider from "../Data";
+import projects from "../Data";
 
 const Projects = () => {
   return (
-    <div>
-      <div id="projects" className="projectContainer">
-        <h2 className="projectHeader">Projects</h2>
-        <Slider />
+    <div className="projectContainer">
+      <h2 className="projectHeader">Projects</h2>
+      <div id="projects" className="projectMainContainer">
+        <div className="slider">
+          {projects.map((item) => (
+            <div key={item.id} className="imageContainer">
+              <img src={item.image} alt={item.name} />
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );

@@ -1,18 +1,14 @@
+@import url("./vars.css");
+
 .expContainer {
   width: 100%;
-  height: 100vh;
-  background-image: radial-gradient(
-    circle,
-    #255092,
-    #2762b1,
-    #2364ad,
-    #237ad0,
-    #1a92f4
-  );
+  height: 98vh;
+  background-color: var(--background-color);
+  color: var(--text-color);
 }
 
 .expHeader {
-  padding: 8% 0 0 3%;
+  padding: 4% 0 0 3%;
   font-size: 2.2em;
   text-align: center;
 }
@@ -26,18 +22,24 @@
 }
 
 .singleExp {
-  width: 40%;
+  width: 50%;
+  height: 50%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  /* border: 1px solid orange; */
+  margin-top: 3%;
 }
 .singleExp > img {
-  width: 40%;
-  height: 30%;
+  width: 50%;
+  height: 60%;
+  background-color: var(--text-color);
+  border-radius: 20%;
 }
 .singleExp > p {
   font-size: 1.5em;
   font-weight: bold;
+  padding: 3% 10%;
 }
 
 /* Mobile view */
@@ -59,17 +61,21 @@
 
   .singleExp {
     width: 90%;
-    height: 50%;
+    height: 40%;
     margin: 0 auto 0 auto;
+    border: 1px solid red;
+    display: flex;
+    justify-content: center;
   }
   .singleExp > p {
     font-size: 1em;
-    text-align: left;
+    text-align: center;
+    padding: 3% 13%;
   }
 
   .singleExp > img {
-    width: 50%;
-    height: 50%;
+    width: 30%;
+    height: 30%;
   }
 }
 
@@ -90,17 +96,21 @@
 
   .singleExp {
     width: 80%;
-    height: 50%;
+    height: 45%;
     margin: 0 auto 0 auto;
+    border: 1px solid green;
+    display: flex;
+    justify-content: center;
   }
   .singleExp > p {
     font-size: 1em;
-    text-align: left;
+    text-align: center;
+    padding: 2% 14%;
   }
 
   .singleExp > img {
-    width: 50%;
-    height: 50%;
+    width: 35%;
+    height: 40%;
   }
 }
 
@@ -114,17 +124,20 @@
   }
 
   .singleExp {
-    width: 40%;
+    width: 45%;
     height: 50%;
+    border: 1px solid orange;
+    display: flex;
+    justify-content: center;
   }
   .singleExp > p {
     font-size: 1em;
-    text-align: left;
+    text-align: center;
   }
 
   .singleExp > img {
     width: 50%;
-    height: 50%;
+    height: 40%;
   }
 }
 
@@ -140,10 +153,13 @@
   .singleExp {
     width: 40%;
     height: 70%;
-    /* border: 1px solid red; */
+    border: 1px solid red;
+    display: flex;
+    justify-content: center;
   }
   .singleExp > p {
     font-size: 1.2em;
+    text-align: center;
   }
 
   .singleExp > img {
