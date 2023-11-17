@@ -1,14 +1,15 @@
 import React from "react";
 import "../Styles/About.css";
 
+import profile from "../../public/assets/images/manoj-profile.JPG";
+
 const About = () => {
   return (
     <div id="about" className="aboutContainer">
       <div className="leftAboutContainer">
-        <img
-          src="https://i.pinimg.com/1200x/8b/16/7a/8b167af653c2399dd93b952a48740620.jpg"
-          alt=""
-        />
+        <div>
+          <img src={profile} alt="" />
+        </div>
       </div>
       <div className="rightAboutContainer">
         <p>
@@ -17,7 +18,7 @@ const About = () => {
           with React.js, HTML, CSS, JavaScript, Node.js Experience in web
           framework like Express. Comfortable with Library like React.js &
           <span style={{ color: "blue", fontWeight: "bold" }}>
-            React-Native(Mobile Apps)
+            &nbsp; React-Native(Mobile Apps)
           </span>
           . Constantly seeking for new challenges and opportunities.
         </p>

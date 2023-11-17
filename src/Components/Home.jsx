@@ -7,12 +7,14 @@ import {
   AiOutlineWhatsApp,
 } from "react-icons/ai";
 
+import profile from "../../public/assets/images/manoj-profile.JPG";
+
 const Home = () => {
   return (
     <div id="home" className="homeContainer">
       <div className="leftHomeSection">
         <div className="innerLeftHome">
-          <h1 className="hello">Hello Iam</h1>
+          <h2 className="hello">Hello I am</h2>
           <h2 className="manoj">Manoj Nadar</h2>
           <h3 className="fullStack">Full Stack Developer</h3>
         </div>
@@ -48,10 +50,9 @@ const Home = () => {
         </div>
       </div>
       <div className="rightHomeSection">
-        <img
-          src="https://i.pinimg.com/1200x/8b/16/7a/8b167af653c2399dd93b952a48740620.jpg"
-          alt=""
-        />
+        <div>
+          <img src={profile} alt="profile" />
+        </div>
       </div>
     </div>
   );

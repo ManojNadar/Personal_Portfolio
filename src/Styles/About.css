@@ -15,11 +15,18 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  /* border: 1px solid red; */
 }
 
-.leftAboutContainer > img {
-  width: 45%;
-  width: 70%;
+.leftAboutContainer > div {
+  width: 65%;
+  height: 70%;
+  /* border: 1px solid red; */
+}
+.leftAboutContainer > div > img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5%;
 }
 
 .rightAboutContainer {
@@ -45,7 +52,6 @@
 @media (max-width: 330px) {
   .aboutContainer {
     flex-direction: column;
-    padding-top: 16%;
   }
   .leftAboutContainer {
     width: 100%;
@@ -56,13 +62,13 @@
   .rightAboutContainer > p {
     font-size: 1.2em;
     text-align: center;
+    padding: 0 2%;
   }
 }
 
 @media (min-width: 330px) and (max-width: 620px) {
   .aboutContainer {
     flex-direction: column;
-    padding-top: 15%;
   }
   .leftAboutContainer {
     width: 100%;
@@ -82,7 +88,6 @@
 @media (min-width: 620px) and (max-width: 780px) {
   .aboutContainer {
     flex-direction: column;
-    padding-top: 10%;
   }
   .leftAboutContainer {
     width: 100%;

@@ -10,6 +10,7 @@ const Projects = () => {
         <div className="slider">
           {projects.map((item) => (
             <div key={item.id} className="imageContainer">
+              <p className="projectTitle">{item.name}</p>
               <img src={item.image} alt={item.name} />
             </div>
           ))}

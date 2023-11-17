@@ -30,15 +30,41 @@
 }
 
 .hello {
-  font-size: 5em;
+  font-size: 3em;
 }
 
 .manoj {
-  font-size: 3.5em;
+  font-size: 3em;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 80%;
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: blue;
+  }
 }
 
 .fullStack {
   font-size: 3em;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 0.15em solid white; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 0.15em; /* Adjust as needed */
+  animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
 }
 
 .socialIcons {
@@ -65,18 +91,22 @@
 .insta:hover {
   color: rgb(234, 68, 104);
   transform: scale(1.2);
+  box-shadow: 2px 2px 40px rgb(234, 68, 104);
 }
 .linked:hover {
   color: rgb(53, 186, 239);
   transform: scale(1.2);
+  box-shadow: 2px 2px 40px rgb(53, 186, 239);
 }
 .git:hover {
   color: blue;
   transform: scale(1.2);
+  box-shadow: 2px 2px 40px blue;
 }
 .whatsapp:hover {
   color: green;
   transform: scale(1.2);
+  box-shadow: 2px 2px 40px green;
 }
 
 .rightHomeSection {
@@ -88,9 +118,14 @@
   align-items: center;
   justify-content: center;
 }
-.rightHomeSection > img {
+.rightHomeSection > div {
   width: 60%;
   height: 65%;
+}
+.rightHomeSection > div > img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50% 20% 50% 20%;
 }
 
 /* Mobile View */
@@ -110,29 +145,44 @@
   }
 
   .hello {
-    font-size: 3em;
-  }
-
-  .manoj {
     font-size: 2em;
   }
 
+  .manoj {
+    font-size: 1.5em;
+  }
+
   .fullStack {
-    font-size: 1em;
+    font-size: 1.3em;
   }
 
   .rightHomeSection {
     height: 70%;
     width: 100%;
   }
-  .rightHomeSection > img {
-    height: 78%;
-    width: 85%;
+
+  .rightHomeSection > div {
+    width: 70%;
+    height: 70%;
+  }
+  .rightHomeSection > div > img {
+    height: 100%;
+    width: 100%;
+    border-radius: 20%;
   }
 
   .socialIcons > a {
     width: 12%;
     box-shadow: none;
+  }
+
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 90%;
+    }
   }
 }
 
@@ -150,24 +200,42 @@
   }
 
   .hello {
-    font-size: 3em;
+    font-size: 2.5em;
   }
 
   .manoj {
-    font-size: 2em;
+    font-size: 1.2em;
   }
 
   .fullStack {
-    font-size: 1em;
+    font-size: 1.3em;
+  }
+
+  .socialIcons > a {
+    box-shadow: none;
   }
 
   .rightHomeSection {
     height: 70%;
     width: 100%;
   }
-  .rightHomeSection > img {
+  .rightHomeSection > div {
     width: 80%;
-    height: 90%;
+    height: 70%;
+  }
+  .rightHomeSection > div > img {
+    height: 100%;
+    width: 100%;
+    border-radius: 15%;
+  }
+
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 60%;
+    }
   }
 }
 
@@ -177,15 +245,15 @@
   }
 
   .hello {
-    font-size: 3em;
+    font-size: 2.5em;
   }
 
   .manoj {
-    font-size: 2em;
+    font-size: 1.8em;
   }
 
   .fullStack {
-    font-size: 1em;
+    font-size: 1.5em;
   }
 
   .rightHomeSection > img {
@@ -195,6 +263,26 @@
 
   .socialIcons > a {
     width: 15%;
+    box-shadow: none;
+  }
+
+  .rightHomeSection > div {
+    width: 80%;
+    height: 70%;
+  }
+  .rightHomeSection > div > img {
+    height: 100%;
+    width: 100%;
+    border-radius: 15%;
+  }
+
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 80%;
+    }
   }
 }
 
@@ -205,15 +293,15 @@
   }
 
   .hello {
-    font-size: 3em;
+    font-size: 2.5em;
   }
 
   .manoj {
-    font-size: 2em;
+    font-size: 1.5em;
   }
 
   .fullStack {
-    font-size: 1em;
+    font-size: 1.5em;
   }
 
   .rightHomeSection > img {
@@ -221,5 +309,25 @@
   }
   .socialIcons > a {
     width: 15%;
+    box-shadow: 1px 1px 5px grey;
+  }
+
+  .rightHomeSection > div {
+    width: 80%;
+    height: 70%;
+  }
+  .rightHomeSection > div > img {
+    height: 100%;
+    width: 100%;
+    border-radius: 15%;
+  }
+
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 60%;
+    }
   }
 }
