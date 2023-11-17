@@ -15,9 +15,18 @@
   height: 100%;
   /* border: 5px solid orange; */
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
+  /* border: 1px solid white; */
+}
+
+.innerLeftHome {
+  /* border: 1px solid red; */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .hello {
@@ -25,11 +34,49 @@
 }
 
 .manoj {
-  font-size: 4em;
+  font-size: 3.5em;
 }
 
 .fullStack {
   font-size: 3em;
+}
+
+.socialIcons {
+  display: flex;
+  /* border: 1px solid red; */
+  width: 60%;
+  justify-content: space-around;
+  margin-top: 3%;
+}
+.socialIcons > a {
+  font-size: 2em;
+  cursor: pointer;
+  color: white;
+  box-shadow: 2px 2px 40px grey;
+  width: 10%;
+  height: 100%;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  padding: 1% 0;
+  border-radius: 20%;
+}
+
+.insta:hover {
+  color: rgb(234, 68, 104);
+  transform: scale(1.2);
+}
+.linked:hover {
+  color: rgb(53, 186, 239);
+  transform: scale(1.2);
+}
+.git:hover {
+  color: blue;
+  transform: scale(1.2);
+}
+.whatsapp:hover {
+  color: green;
+  transform: scale(1.2);
 }
 
 .rightHomeSection {
@@ -82,6 +129,11 @@
     height: 78%;
     width: 85%;
   }
+
+  .socialIcons > a {
+    width: 12%;
+    box-shadow: none;
+  }
 }
 
 @media (min-width: 330px) and (max-width: 620px) {
@@ -89,7 +141,7 @@
     width: 100%;
     flex-direction: column;
     justify-content: center;
-    margin-top: 5%;
+    margin-top: 8%;
   }
 
   .leftHomeSection {
@@ -140,6 +192,10 @@
     width: 80%;
     height: 60%;
   }
+
+  .socialIcons > a {
+    width: 15%;
+  }
 }
 
 @media (min-width: 780px) and (max-width: 1120px) {
@@ -162,5 +218,8 @@
 
   .rightHomeSection > img {
     width: 80%;
+  }
+  .socialIcons > a {
+    width: 15%;
   }
 }
