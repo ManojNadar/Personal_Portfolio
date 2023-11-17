@@ -16,7 +16,8 @@ const About = () => {
           <span className="aboutMe">About Me - </span>
           MERN Stack developer with 6 months full stack Certification. Enjoys
           working with React.js, HTML, CSS, JavaScript, Node.js Experience in
-          web framework like Express. Comfortable with Library like React.js &
+          web framework like Express. Comfortable with Library & Framework like
+          React.js &
           <span style={{ color: "blue", fontWeight: "bold" }}>
             &nbsp; React-Native(Mobile Apps)
           </span>
