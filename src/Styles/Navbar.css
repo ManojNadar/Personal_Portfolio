@@ -2,7 +2,6 @@
 
 nav {
   width: 100%;
-  height: 8%;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -12,6 +11,7 @@ nav {
   z-index: 9999;
   background-color: var(--background-color);
   color: var(--text-color);
+  padding: 2% 2%;
 }
 
 .logo {
@@ -21,6 +21,10 @@ nav {
   padding-top: 0.3%;
   font-weight: bolder;
   font-size: 2em;
+}
+.logo:hover {
+  cursor: pointer;
+  color: aquamarine;
 }
 .navigations {
   padding-top: 0.5%;
@@ -34,6 +38,11 @@ nav {
 .navigations > a {
   font-weight: bolder;
   font-size: 1.5em;
+  cursor: pointer;
+}
+.navigations > a:hover {
+  text-shadow: 1px 1px 25px grey;
+  color: blue;
 }
 
 .mobNavigations {
@@ -46,10 +55,10 @@ nav {
 
 /* Mobile screen */
 
-@media (max-width: 320px) {
+@media (max-width: 330px) {
   nav {
     justify-content: space-between;
-    padding: 0 4% 0 4%;
+    padding: 3% 2%;
   }
   .navigations {
     display: none;
@@ -86,10 +95,10 @@ nav {
   }
 }
 
-@media (min-width: 320px) and (max-width: 620px) {
+@media (min-width: 330px) and (max-width: 620px) {
   nav {
     justify-content: space-between;
-    padding: 0 4% 0 4%;
+    padding: 3% 3%;
   }
   .navigations {
     display: none;
@@ -129,7 +138,7 @@ nav {
 @media (min-width: 620px) and (max-width: 780px) {
   nav {
     justify-content: space-between;
-    padding: 0 4% 0 4%;
+    padding: 3% 4%;
   }
   .navigations {
     display: none;
