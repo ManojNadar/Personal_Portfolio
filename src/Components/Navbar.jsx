@@ -8,20 +8,39 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <nav>
-      <Link to="home" spy={true} smooth={true} duration={500} className="logo">
+      <Link
+        offset={-50}
+        to="home"
+        spy={true}
+        smooth={true}
+        duration={500}
+        className="logo"
+      >
         MAN.DEV
       </Link>
       <div className="navigations">
-        <Link spy={true} smooth={true} duration={500} to="about">
+        <Link offset={-50} spy={true} smooth={true} duration={500} to="about">
           About
         </Link>
-        <Link spy={true} smooth={true} duration={500} to="projects">
+        <Link
+          offset={-50}
+          spy={true}
+          smooth={true}
+          duration={500}
+          to="projects"
+        >
           Projects
         </Link>
-        <Link spy={true} smooth={true} duration={500} to="experience">
+        <Link
+          offset={-50}
+          spy={true}
+          smooth={true}
+          duration={500}
+          to="experience"
+        >
           Experience
         </Link>
-        <Link spy={true} smooth={true} duration={500} to="contact">
+        <Link offset={-50} spy={true} smooth={true} duration={500} to="contact">
           Contact
         </Link>
       </div>

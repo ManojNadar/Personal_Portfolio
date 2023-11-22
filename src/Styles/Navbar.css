@@ -21,10 +21,11 @@ nav {
   padding-top: 0.3%;
   font-weight: bolder;
   font-size: 2em;
+  /* color: blue; */
 }
 .logo:hover {
   cursor: pointer;
-  color: aquamarine;
+  color: blue;
 }
 .navigations {
   padding-top: 0.5%;
