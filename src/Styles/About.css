@@ -61,8 +61,8 @@
   }
   .rightAboutContainer > p {
     font-size: 1.2em;
-    text-align: left;
-    padding: 0 2.5%;
+    text-align: justify;
+    padding: 0 3%;
   }
 }
 
@@ -81,7 +81,7 @@
   }
   .rightAboutContainer > p {
     font-size: 1.2em;
-    text-align: center;
+    text-align: justify;
   }
 }
 

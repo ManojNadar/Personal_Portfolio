@@ -58,7 +58,7 @@ nav {
 @media (max-width: 330px) {
   nav {
     justify-content: space-between;
-    padding: 3% 2%;
+    padding: 3% 4%;
   }
   .navigations {
     display: none;

@@ -7,7 +7,7 @@ import {
   AiOutlineWhatsApp,
 } from "react-icons/ai";
 
-import profile from "../../public/assets/images/manoj.png";
+import profile from "../assets/images/manoj.png";
 
 const Home = () => {
   return (
